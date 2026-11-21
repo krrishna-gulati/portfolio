@@ -27,8 +27,9 @@ Each one is already on the site as a draft card. For each project, send: what it
 ## Pending from you
 
 - [ ] Resume PDF: save it as `assets/resume.pdf`
-- [ ] LinkedIn URL: set `linkedin` in `js/data.js`
-- [ ] Personal email for the contact section: set `email` in `js/data.js`
+- [x] LinkedIn URL (added)
+- [x] Personal email (added)
+- [x] Phone number (added)
 - [ ] GitHub URL, if you want it shown: set `github` in `js/data.js`
 
 ## Please confirm (I made assumptions here)

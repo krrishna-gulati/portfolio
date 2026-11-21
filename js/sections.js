@@ -194,7 +194,7 @@
     function size() {
       ({ ctx, w, h } = sizeCanvas(cv));
       nodes = layers.map((n, li) => Array.from({ length: n }, (_, i) => ({
-        x: w * 0.2 + li * ((w * 0.7) / (layers.length - 1)),
+        x: w * 0.3 + li * ((w * 0.62) / (layers.length - 1)),
         y: h * 0.12 + ((i + 1) * (h * 0.76)) / (n + 1),
         g: 0
       })));

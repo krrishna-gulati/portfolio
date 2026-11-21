@@ -9,9 +9,9 @@ window.PORTFOLIO = {
   role: "Software Engineer II",
   company: "Americana Restaurants",
 
-  email: "",        // TODO: personal email, e.g. "you@gmail.com"
+  email: "krrishnagulati@gmail.com",
   phone: "+91 88726 86825",
-  linkedin: "",     // TODO: "https://www.linkedin.com/in/..."
+  linkedin: "https://www.linkedin.com/in/krrishna-gulati/",
   github: "",       // TODO (optional)
   resume: "assets/resume.pdf", // TODO: drop your resume PDF at this path
 
@@ -27,7 +27,7 @@ window.PORTFOLIO = {
 
   // Words wrapped in *asterisks* glow lime as the visitor scrolls
   about:
-    "I build software that *thinks.* From an internship at *Airbus* to engineering *loyalty platforms* for some of the world's most-loved food brands at *Americana,* I turn *machine learning, AI tools, APIs and MCP connections* into products that make everyday work *effortless.*",
+    "I build software that *thinks.* From an internship at *Airbus* to engineering *loyalty platforms* for some of the world's most-loved food brands at *Americana,* I turn *machine learning, neural networks, AI tools, APIs and MCP connections* into products that make everyday work *effortless.*",
 
   stats: [
     { value: 4,  suffix: "",  label: "Roles in 2 years" },
@@ -103,14 +103,14 @@ window.PORTFOLIO = {
 
   /* Skills. TODO: tune to your exact stack */
   skills: {
-    ml:  { title: "Machine Learning", blurb: "From MRI scans to LLM agents: models that solve real problems.", chips: ["Python", "Machine Learning", "Deep Learning", "Computer Vision", "NLP", "LLM Agents"] },
+    ml:  { title: "Machine Learning", blurb: "Neural networks that solve real problems, from MRI scans to LLM agents.", chips: ["Python", "Machine Learning", "Neural Networks", "Deep Learning", "Computer Vision", "NLP", "LLM Agents"] },
     dev: { title: "Software Development", blurb: "Clean, scalable systems from API to UI.", chips: ["JavaScript", "Python", "REST APIs", "SQL", "Git", "Azure"] },
     app: { title: "App Development", blurb: "Customer-facing apps for global brands.", chips: ["Mobile Apps", "Zoho Creator", "Low-code", "UI Engineering"] },
     ai:  { title: "AI-native Workflow", blurb: "I stay current on AI tools and use them every day to make work faster.", chips: ["MCP", "Claude", "ChatGPT", "GitHub Copilot", "Prompt Engineering", "API Integrations"] }
   },
 
   marquee: [
-    "Python", "Machine Learning", "Deep Learning", "Computer Vision", "LLM Agents", "MCP",
+    "Python", "Machine Learning", "Neural Networks", "Deep Learning", "Computer Vision", "LLM Agents", "MCP",
     "REST APIs", "Azure Services", "Zoho Creator", "App Development", "JavaScript", "SQL",
     "Prompt Engineering", "Automation", "Git", "Loyalty Platforms"
   ],
@@ -148,7 +148,7 @@ window.PORTFOLIO = {
     {
       id: "brain", title: "Brain Tumour Detection", subtitle: "Deep learning × medical imaging",
       category: "ml", status: "ML", visual: "scan",
-      tags: ["Deep Learning", "Computer Vision", "Medical AI"],
+      tags: ["Neural Networks", "Deep Learning", "Computer Vision", "Medical AI"],
       blurb: "A deep learning model that detects brain tumours from MRI scans."
     },
     {
