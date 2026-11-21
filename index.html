@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Krrishna Gulati · Software Engineer II</title>
+  <meta name="description" content="Krrishna Gulati: Software Engineer II at Americana Restaurants. ML enthusiast, app developer and AI-native builder working with MCP and APIs.">
+  <meta name="theme-color" content="#060608">
+  <meta property="og:title" content="Krrishna Gulati · Software Engineer II">
+  <meta property="og:description" content="Software that thinks. ML · Apps · MCP · APIs.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23060608'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial Black,Arial' font-weight='900' font-size='30' fill='%23d4ff3f'%3EKG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Manrope:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-loading">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ============ BOOT LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__term mono" id="loaderLines"></div>
+      <div class="loader__foot">
+        <div class="loader__count"><span id="loaderCount">0</span><small>%</small></div>
+        <div class="loader__bar"><i id="loaderBar"></i></div>
+        <p class="loader__skip mono">press any key to skip</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ GLOBAL FX ============ -->
+  <div class="cursor" aria-hidden="true">
+    <div class="cursor__dot"></div>
+    <div class="cursor__ring"><span class="cursor__label"></span></div>
+  </div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><i id="progressBar"></i></div>
+  <canvas class="fx-canvas" id="fxCanvas" aria-hidden="true"></canvas>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo" data-magnetic aria-label="Back to top">KG<span>.</span></a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#stack">Stack</a>
+      <a href="#work">Work</a>
+      <a href="#terminal">Terminal</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="nav__cmd mono" id="cmdOpen" aria-label="Open command palette"><kbd>Ctrl</kbd><kbd>K</kbd></button>
+      <a class="btn btn--sm" href="#contact" data-magnetic>Hire me</a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="blob blob--a"></div>
+        <div class="blob blob--b"></div>
+        <div class="grid-lines"></div>
+      </div>
+      <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+
+      <div class="hero__top">
+        <span class="pill"><i class="pulse"></i><span id="heroStatus">Software Engineer II @ Americana Restaurants</span></span>
+        <span class="hero__meta mono">PEC '26 · ML · APPS · MCP · APIs</span>
+      </div>
+
+      <h1 class="sr-only">Krrishna Gulati, Software Engineer II</h1>
+      <div class="hero__stage" id="heroStage" aria-hidden="true"></div>
+
+      <div class="hero__bottom">
+        <div>
+          <div class="hero__role mono"><span class="accent">&gt;</span> <span id="roleText">Software Engineer II</span><span class="caret"></span></div>
+          <p class="hero__lede">I build software that <em class="serif">thinks</em>: ML models, AI agents, apps and MCP-powered integrations that make work effortless.</p>
+        </div>
+        <div class="hero__ctas">
+          <a class="btn" href="#work" data-magnetic data-cursor="Go">See the work <span aria-hidden="true">↓</span></a>
+          <button class="btn btn--ghost" data-open-terminal data-magnetic>Open terminal <span class="mono" aria-hidden="true">&gt;_</span></button>
+        </div>
+      </div>
+      <div class="hero__hint mono" aria-hidden="true"><span>move</span> · <span>click</span> · <span>explode</span></div>
+      <a href="#about" class="hero__scroll mono" aria-label="Scroll to about"><span>scroll</span><i></i></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <p class="eyebrow mono" data-reveal>// 01 · whoami</p>
+      <p class="about__text" id="aboutText"></p>
+      <div class="stats" id="stats"></div>
+    </section>
+
+    <!-- ============ JOURNEY (horizontal level-up track) ============ -->
+    <section class="journey" id="journey">
+      <div class="journey__sticky">
+        <div class="journey__head">
+          <div>
+            <p class="eyebrow mono">// 02 · the level-up log</p>
+            <h2 class="h2" data-scramble>Intern → <em class="serif">SE II</em></h2>
+          </div>
+          <div class="hud mono" aria-hidden="true">
+            <div class="hud__row"><span>LVL</span><b id="hudLevel">0</b><span class="hud__title" id="hudTitle">Spawn point</span></div>
+            <div class="hud__xp"><i id="hudXp"></i></div>
+            <div class="hud__row hud__row--small"><span>XP</span><span id="hudXpText">0 / 4000</span></div>
+          </div>
+        </div>
+        <div class="journey__viewport">
+          <div class="journey__track" id="journeyTrack">
+            <div class="journey__line" aria-hidden="true"><i id="journeyLineFill"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STACK ============ -->
+    <section class="stack section" id="stack">
+      <p class="eyebrow mono" data-reveal>// 03 · the stack</p>
+      <h2 class="h2" data-scramble>Models. Apps. <em class="serif">Agents.</em></h2>
+
+      <div class="bento">
+        <article class="bento__card bento__card--ml" data-reveal data-spot>
+          <canvas class="nn-canvas" id="nnCanvas" aria-hidden="true"></canvas>
+          <div class="bento__content">
+            <span class="bento__idx mono">ML</span>
+            <h3 data-skill-title="ml"></h3>
+            <p data-skill-blurb="ml"></p>
+            <ul class="chips" data-skill-chips="ml"></ul>
+          </div>
+        </article>
+
+        <article class="bento__card bento__card--app" data-reveal data-spot>
+          <div class="bento__content">
+            <span class="bento__idx mono">APP</span>
+            <h3 data-skill-title="app"></h3>
+            <p data-skill-blurb="app"></p>
+            <ul class="chips" data-skill-chips="app"></ul>
+          </div>
+          <div class="phone" aria-hidden="true">
+            <div class="phone__notch"></div>
+            <div class="phone__screen">
+              <div class="phone__notif"><b>🎉 +120 points</b><span>Your reward is ready to redeem</span></div>
+              <div class="phone__hero"></div>
+              <div class="phone__row"><i></i><i></i><i></i></div>
+              <div class="phone__card"></div>
+              <div class="phone__card phone__card--sm"></div>
+              <div class="phone__tab"><i></i><i></i><i></i><i></i></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="bento__card bento__card--dev" data-reveal data-spot>
+          <div class="bento__content">
+            <span class="bento__idx mono">DEV</span>
+            <h3 data-skill-title="dev"></h3>
+            <p data-skill-blurb="dev"></p>
+            <ul class="chips" data-skill-chips="dev"></ul>
+          </div>
+          <pre class="code mono" id="codeType" aria-hidden="true"></pre>
+        </article>
+
+        <article class="bento__card bento__card--ai" data-reveal data-spot>
+          <div class="bento__content">
+            <span class="bento__idx mono">AI</span>
+            <h3 data-skill-title="ai"></h3>
+            <p data-skill-blurb="ai"></p>
+            <ul class="tools mono" id="aiTools"></ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__row" id="marqueeA"></div>
+        <div class="marquee__row marquee__row--rev" id="marqueeB"></div>
+      </div>
+    </section>
+
+    <!-- ============ MCP ============ -->
+    <section class="mcp section" id="mcp">
+      <div class="mcp__copy">
+        <p class="eyebrow mono" data-reveal>// 04 · how I work</p>
+        <h2 class="h2" data-scramble>Wiring AI into <em class="serif">real</em> systems.</h2>
+        <p class="lead" data-reveal>I connect LLMs to tools, data and platforms through MCP servers and APIs, and use AI tools every day to get work done faster. Click any node to fire a tool call.</p>
+        <div class="console mono" data-reveal>
+          <div class="console__bar"><span>agent.log</span><span class="console__tag">simulated · live</span></div>
+          <div class="console__body" id="mcpLog"></div>
+        </div>
+      </div>
+      <div class="mcp__graph" data-reveal>
+        <svg id="mcpSvg" viewBox="0 0 600 600" role="img" aria-label="Diagram of an LLM agent connected through MCP to Zoho Creator, Azure, mail, databases and other APIs"></svg>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="work section" id="work">
+      <div class="work__head">
+        <div>
+          <p class="eyebrow mono" data-reveal>// 05 · selected work</p>
+          <h2 class="h2" data-scramble>Things I've <em class="serif">built.</em></h2>
+        </div>
+        <div class="filters" id="filters" role="tablist" aria-label="Filter projects"></div>
+      </div>
+      <div class="projects" id="projects"></div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="certs section" id="certs">
+      <p class="eyebrow mono" data-reveal>// 06 · achievements</p>
+      <h2 class="h2" data-scramble>Trophy <em class="serif">case.</em></h2>
+      <div class="certs__grid" id="certsGrid"></div>
+    </section>
+
+    <!-- ============ TERMINAL ============ -->
+    <section class="terminal section" id="terminal">
+      <p class="eyebrow mono" data-reveal>// 07 · interactive</p>
+      <h2 class="h2" data-scramble>Talk to my <em class="serif">terminal.</em></h2>
+      <div class="term" data-reveal>
+        <div class="term__bar"><i></i><i></i><i></i><span class="mono">krrishna@portfolio: ~</span></div>
+        <div class="term__body mono" id="termBody">
+          <div id="termOut"></div>
+          <label class="term__line">
+            <span class="term__ps">krrishna@portfolio:~$</span>
+            <input id="termInput" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="Terminal command input">
+          </label>
+        </div>
+      </div>
+      <div class="term__chips" id="termChips"></div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <p class="eyebrow mono" data-reveal>// 08 · what's next</p>
+      <h2 class="contact__title" data-reveal>Let's build something <em class="serif">intelligent.</em></h2>
+      <a class="contact__cta" id="contactCta" href="#" data-magnetic data-cursor="Say hi">
+        <span>Say hello</span><i aria-hidden="true">↗</i>
+      </a>
+      <div class="contact__links" id="contactLinks"></div>
+    </section>
+  </main>
+
+  <footer class="footer mono">
+    <span>© <span id="year"></span> Krrishna Gulati</span>
+    <span>Designed &amp; engineered with AI as co-pilot</span>
+    <span>v2.0 · SE II edition</span>
+  </footer>
+
+  <!-- ============ PROJECT MODAL ============ -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" data-close aria-label="Close">✕</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- ============ COMMAND PALETTE ============ -->
+  <div class="palette" id="palette" aria-hidden="true">
+    <div class="palette__backdrop" data-close></div>
+    <div class="palette__panel" role="dialog" aria-modal="true" aria-label="Command palette">
+      <input class="palette__input" id="paletteInput" type="text" placeholder="Type a command or search…" autocomplete="off" spellcheck="false">
+      <ul class="palette__list mono" id="paletteList" role="listbox"></ul>
+      <div class="palette__foot mono"><span>↑↓ navigate</span><span>↵ run</span><span>esc close</span></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/fx.js"></script>
+  <script src="js/hero.js"></script>
+  <script src="js/sections.js"></script>
+  <script src="js/terminal.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
